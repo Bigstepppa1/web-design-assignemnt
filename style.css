@@ -1,0 +1,97 @@
+body{
+    background: rgba(128, 128, 128, 0.48);
+    animation: animate .7s ease;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+@keyframes animate {
+    from{
+        transform: scale(0);
+        opacity: 0;
+
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+
+    }
+    
+}
+header{
+    background: white;
+    text-align: center;
+    padding: clamp(0.3rem,0.5vw,0.7rem);
+    margin-bottom: clamp(0.3rem,0.5vw,0.7rem);
+    border-radius: 0.7rem;
+    box-shadow: 1px 1px 5px black;
+    text-shadow: 7px 7px 10px black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    background-image: url('dark\ theme\ for\ header.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .2s linear;
+}
+header:hover{
+    transform: scale(1.03);
+}
+
+form{
+    text-align: center;
+    margin-top: 5rem;
+}
+label{
+    cursor: pointer;
+
+}
+
+input{
+    cursor: pointer;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: clamp(0.3rem,0.5vw,0.7rem);
+    box-shadow: 0.7px 0.7px 2px black;
+    transition: all .2s ease;
+}
+input:hover{
+    transform: scale(1.07);
+}
+input:active{
+    transform: scale(0.9);
+}
+main{
+    position: relative;
+}
+#submitbtn{
+    background-color: greenyellow;
+    padding: 0.4rem;
+    position: relative;
+    left: 100px;
+}
+
+#submitbtn:hover{
+    transform: translateY(-7px);
+}
+
+#earningText{
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+
+footer{
+    position: fixed;
+    padding: 1.4rem;
+    bottom: 0px;
+    font-size: 0.7rem;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background: rgba(255, 255, 255, 0.861);
+    border-top-left-radius: 0.7rem;
+    z-index: 9999;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.jpg" type="image/jpg">
+    <title>Salary Estimator Pro</title>
+</head>
+<body>
+    <header>
+        <h1 title="style.css">SALARY ESTIMATOR PRO</h1>
+    </header>
+
+    <main>
+        <form action="" id="form">
+            <label for="salary" title="enter your basic salary in the input field">Basic Salary: &nbsp</label>
+            <input type="text" id="salary" placeholder="Enter salary" required><br><br>
+
+            <label for="allowance" title="enter your allowances in the input field">Allowances: &nbsp</label>
+            <input type="text" id="allowance" placeholder="Enter allowance" required><br><br>
+
+            <label for="deduction" title="enter your deductions in the input field">Deductions: &nbsp</label>
+            <input type="text" id="deduction" placeholder="Enter deductions" required><br><br>
+
+            <input type="submit" id="submitbtn" title="press to submit">
+        </form>
+
+        <p id="earningText">This is your total earnings: <span id="display_earning">00.00</span>KES</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Group 51. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
