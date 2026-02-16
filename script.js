@@ -7,7 +7,11 @@ const display_earning = document.querySelector('#display_earning');
 form.addEventListener('submit' , (e)=>{
     e.preventDefault();
     if(!/\d/.test(salary.value) || !/\d/.test(allowance.value) || !/\d/.test(deduction.value)){
-        alert('Can only contain numeric values')
+        alert('Can only contain numeric values');
+        salary.value = '';
+        allowance.value = '';
+        deduction.value = '';
+        return;
     }
     calculate();
 })
