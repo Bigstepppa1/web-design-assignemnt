@@ -16,12 +16,13 @@ form.addEventListener('submit' , (e)=>{
     calculate();
 })
 
+
 function calculate(){
     let get_salary = parseFloat(salary.value.trim());
     let get_allowance = parseFloat(allowance.value.trim());
     let get_deduction = parseFloat(deduction.value.trim());
     let total = get_salary + get_allowance + get_deduction;
-    display_earning.textContent = total;
+    display_earning.textContent = total.toFixed(2);
     salary.value = '';
     allowance.value = '';
     deduction.value = '';

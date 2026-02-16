@@ -38,6 +38,10 @@ header:hover{
     transform: scale(1.03);
 }
 
+header:hover{
+    color:gold;
+}
+
 form{
     text-align: center;
     margin-top: 5rem;
@@ -53,7 +57,7 @@ input{
     border-radius: 0.5rem;
     border: none;
     padding: clamp(0.3rem,0.5vw,0.7rem);
-    box-shadow: 0.7px 0.7px 2px black;
+    box-shadow: 1px 1px 2.5px black;
     transition: all .2s ease;
 }
 input:hover{
@@ -70,6 +74,7 @@ main{
     padding: 0.4rem;
     position: relative;
     left: 100px;
+    color:black;
 }
 
 #submitbtn:hover{
@@ -86,7 +91,6 @@ footer{
     padding: 1.4rem;
     bottom: 0px;
     font-size: 0.7rem;
-    font-family: cursive;
     display: flex;
     justify-content: center;
     align-items: center;
