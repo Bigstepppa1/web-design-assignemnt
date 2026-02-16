@@ -84,11 +84,12 @@ main{
 #earningText{
     font-size: 1.3rem;
     margin-left: 1rem;
+    /* margin-bottom: 2rem; */
 }
 
 footer{
     position: fixed;
-    padding: 1.4rem;
+    padding: 1.2rem;
     bottom: 0px;
     font-size: 0.7rem;
     display: flex;
